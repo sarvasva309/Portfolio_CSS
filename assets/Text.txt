@@ -1,0 +1,67 @@
+Colors:
+Black: #000000
+Blue: #068FFF
+Gray: #B2B2B2
+White: #EEEEEE
+
+1) Title Page
+
+Hi, I'm Sarvasva
+A Web Developer, UI/UX Designer, Coder (Toggle between the three)
+
+2) About Section
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+3) Skills Section
+
+Programming Skills   Design/Development Skills
+C++                  HTML
+Java                 CSS
+C                    Bootstrap
+Python               Figma
+
+(Keep both P sklls and D/D skills in different divs)
+
+4) Education
+
+Page with images of IIT Roorkee, FIITJEE, Gitamjali Devshala with their images, home page links, addresses.
+
+IIT Roorkee
+B-Tech, CSE (2022 - Ongoing)       9.51
+NSS
+Courses:
+CSN291, CSN221, CSN106, CSN102, CSN103 with grades
+
+FIITJEE, Hyderabad
+MPC Stream (2020 - 2022)           98.4%
+Secured Centum in 
+JEEM, JEEA, KVPY SX
+
+Gitanjali Devshala, Secunderabad
+ICSE Board (2016-2020)             97.6%
+School Topper for the year 2019-2020
+Secured Centum in Science, HCG, Computer Science.
+
+5) Project Section
+
+Three divs (in flexbox)
+
+6)Contact Section
+
+2 divisions 
+Left side: Image, 
+
+Sarvasva Gupta
+Feel free to get in touch with me via call or e-mail.
+
+Phone number:
+Email:
+
+Social media links:
+
+Right side: Contact form
+name, email, phone number, message,
+Send button.
+
+

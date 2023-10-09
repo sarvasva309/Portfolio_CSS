@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarvasva Gupta</title>
+    <style>
+        /*Navbar*/
+        body {
+            background-color: #181823;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+
+            padding: 15px 0px;
+            margin: 0px 0px 5% 0px;
+
+            background-color: #000000;
+            box-shadow: 1px 1px 7px #B2B2B2;
+        }
+
+        .items {
+            display: flex;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .links a {
+            text-decoration: none;
+            padding: 0px 15px;
+            color: #B2B2B2;
+        }
+
+        .links a:hover {
+            color: #068FFF;
+        }
+
+        /*Title Page*/
+        .icons {
+            margin-bottom: 10px;
+        }
+
+        #title-page>div {
+            width: 42.5%;
+            background-color: #000000;
+            box-shadow: 1px 1px 7px #B2B2B2;
+            padding: 2%;
+            border-radius: 5px;
+        }
+
+        .right {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: fit-content;
+        }
+
+        .right img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        /*About*/
+
+        #about {
+            flex-direction: column;
+            /* padding: 0px 5% 0px 5%; */
+        }
+
+        #about div {
+            margin-bottom: 2.5%;
+            text-align: center;
+        }
+
+        .image img {
+            height: 250px;
+            border-radius: 125px;
+            box-shadow: 1px 1px 4px #B2B2B2;
+        }
+
+        /*Skills*/
+        .container {
+            box-shadow: 1px 1px 7px #B2B2B2;
+            height: 85vh;
+            width: 40%;
+
+            background-color: #000000;
+
+            padding: 2% 2% 1% 2%;
+            margin: 2.5%;
+        }
+
+        .container .text2 {
+            height: 18%;
+            margin-bottom: 2%;
+            font-weight: 700;
+        }
+
+        .container .text3 {
+            height: 16%;
+            margin-bottom: 4%;
+        }
+
+        .skill,
+        .percentage {
+            display: inline-block;
+
+            width: 32%;
+            height: 42%;
+            margin: 1% 2% 1% 1%;
+
+            border: 1px solid #068FFF;
+            border-radius: 10px;
+
+            text-align: center;
+        }
+
+        .progress {
+            width: 70%;
+            height: 54%;
+
+            border: 1px solid #068FFF;
+            border-radius: 5px;
+
+            margin: 0 1% 1% 2%;
+
+        }
+
+        .progress-value-100 {
+            height: 100%;
+            width: 100%;
+            background-color: #068FFF;
+            animation: fillin-100 5s linear 4.8s infinite forwards;
+        }
+
+        .progress-value-85 {
+            height: 100%;
+            width: 85%;
+            background-color: #068FFF;
+            animation: fillin-85 5s linear 4.8s infinite forwards;
+        }
+
+        .progress-value-70 {
+            height: 100%;
+            width: 70%;
+            background-color: #068FFF;
+            animation: fillin-70 5s linear 4.8s infinite forwards;
+        }
+
+        .progress-value-20 {
+            height: 100%;
+            width: 20%;
+            background-color: #068FFF;
+            animation: fillin-20 5s linear 4.8s infinite forwards;
+        }
+
+        @keyframes fillin-100 {
+            0% {
+                width: 0%;
+            }
+
+            10% {
+                width: 100%;
+            }
+
+            100% {
+                width: 100%;
+            }
+        }
+
+        @keyframes fillin-85 {
+            0% {
+                width: 0%;
+            }
+
+            10% {
+                width: 85%;
+            }
+
+            100% {
+                width: 85%;
+            }
+        }
+
+        @keyframes fillin-70 {
+            0% {
+                width: 0%;
+            }
+
+            10% {
+                width: 70%;
+            }
+
+            100% {
+                width: 70%;
+            }
+        }
+
+        @keyframes fillin-20 {
+            0% {
+                width: 0%;
+            }
+
+            10% {
+                width: 20%;
+            }
+
+            100% {
+                width: 20%;
+            }
+        }
+
+
+        /*Education*/
+        .card{
+            display: block !important;
+
+            width: 80%;
+
+            margin:auto;
+            margin-top: 2.5%;
+
+            border-radius: 5px;
+            background-color: #000000;
+            padding: 2%;
+            box-shadow: 1px 1px 7px #B2B2B2;
+        }
+
+        .year{
+            border: 1px solid #068FFF;
+            border-radius: 10px;
+            padding: 3px;
+        }
+
+        .card div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card .card2>div{
+            border-radius: 5px;
+            background-color: #000000;
+            padding: 2%;
+            box-shadow: 1px 1px 7px #B2B2B2;
+        }
+        /*Contact*/
+        .contact>div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .bottom {
+            margin-top: 2.5%;
+        }
+
+        /*Left*/
+        .leftc {
+            background-color: #000000;
+            border-radius: 5px;
+            box-shadow: 1px 1px 7px #B2B2B2;
+
+            width: 35%;
+            padding: 2%;
+        }
+
+        .leftc img {
+            width: 100%;
+            border-radius: 5px;
+            box-shadow: 1px 1px 7px #B2B2B2;
+            color: #068FFF;
+        }
+
+        .leftc .contacttext {
+            margin-bottom: 8%;
+        }
+
+        .leftc .socialmedialinks {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .leftc .socialmedialinks>div {
+            padding: 2%;
+            border-radius: 5px;
+            background-color: #181823;
+            box-shadow: 1px 1px 7px #B2B2B2;
+        }
+
+        .leftc .socialmedialinks img {
+            box-shadow: none;
+            height: 3vw;
+            width: 3vw;
+        }
+
+        .leftc .socialmedialinks>div :hover {
+            position: relative;
+            top: -5%;
+            left: 5%;
+        }
+
+        .rightc {
+            background-color: #000000;
+            border-radius: 5px;
+            box-shadow: 1px 1px 7px #B2B2B2;
+
+            width: 50%;
+            padding: 2%;
+        }
+
+        .rightc .input {
+            margin-bottom: 5%;
+            align-items: start;
+        }
+
+        .rightc .input>* {
+            width: 80%;
+            height: 5vh;
+
+            background-color: #181823;
+            box-shadow: 1px 1px 7px #B2B2B2;
+
+            text-align: left;
+            align-self: flex-start;
+        }
+
+        .rightc input:focus {
+            outline: none;
+            border: 3px solid #068FFF;
+        }
+
+        .rightc #message textarea {
+            height: 30vh;
+        }
+
+        .btn{
+            background-color: #068FFF;
+            border-radius: 10px;
+            padding: 2%;
+            cursor: pointer;
+            border: 1px solid black;
+            box-shadow: 1px 1px 7px #B2B2B2;
+        }
+
+        .btn:hover{
+            position: relative;
+            top:-2px;
+        }
+        /*Common*/
+        .pages>div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .text1 {
+            font-size: 65px;
+            color: #EAEAEA;
+        }
+
+        .text2 {
+            font-size: 40px;
+            color: #EAEAEA;
+        }
+
+        .text3 {
+            font-size: 20px;
+            color: #EAEAEA;
+        }
+
+        .roboto {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .pages {
+            margin-bottom: 5%;
+            padding-bottom: 5%;
+            border-bottom: 2px solid #B2B2B2;
+        }
+
+        .blue {
+            color: #068FFF;
+        }
+
+        .white {
+            color: #FFFFFF;
+        }
+
+        .gray {
+            color: #B2B2B2;
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .footer {
+            text-align: center;
+            margin-bottom: 5%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo blue roboto text3">
+            <img src="" alt="" />
+            <span>SarvasvaGupta</span>
+        </div>
+        <ul class="items">
+            <li class="links"><a class="roboto" href="#i1">HOME</a></li>
+            <li class="links"><a class="roboto" href="#i2">ABOUT</a></li>
+            <li class="links"><a class="roboto" href="#i3">SKILLS</a></li>
+            <li class="links"><a class="roboto" href="#i4">EDUCATION</a></li>
+            <li class="links"><a class="roboto" href="#i5">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!--Title Page-->
+    <div class="pages" id="i1">
+        <div id="title-page">
+            <div class="left roboto">
+                <div id="intro">
+                    <p class="text1 bold">
+                        Hi, I'm<br />
+                        <span class="blue">Sarvasva</span><br />
+                        <span class="text2">A <span class="blue">Web Developer.</span></span>
+                    </p>
+                </div>
+
+                <div id="contact">
+                    <div class="icons"><img src="./assets/images/352510_local_phone_icon.svg" alt="phone" height="25">
+                        <span class="text3">+91 XXXXX-XXXXX</span>
+                    </div>
+                    <div class="icons"><img src="./assets/images/134146_mail_email_icon.svg" alt="mail" height="20">
+                        <span class="text3">abcxyz@gmail.com</span>
+                    </div>
+                    <div class="icons"><img src="./assets/images/352521_location_on_icon.svg" alt="location"
+                            height="25">
+                        <span class="text3">Lorem ipsum dolor sit amet.</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <img src="./assets/images/title-page.jpeg" alt="image">
+            </div>
+
+        </div>
+    </div>
+
+    <!--About-->
+    <div class="pages" id="i2">
+        <div id="about">
+
+            <div class="text1 blue bold">
+                About Me
+            </div>
+            <div class="image">
+                <img src="./assets/images/about.png" alt="image">
+            </div>
+
+            <div class="text3 roboto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </div>
+        </div>
+    </div>
+
+    <!--Skills-->
+    <div class="pages" id="i3">
+        <div class="text1 blue bold">
+            My Skills
+        </div>
+
+        <div class="finalcontainer roboto">
+            <div class="container">
+                <div class="text2 blue">
+                    Programming Skills
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        C++
+                    </div>
+                    <div class="percentage">
+                        85%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-85"></div>
+                    </div>
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        Java
+                    </div>
+                    <div class="percentage">
+                        70%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-70"></div>
+                    </div>
+
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        C
+                    </div>
+                    <div class="percentage">
+                        70%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-70"></div>
+                    </div>
+
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        Python
+                    </div>
+                    <div class="percentage">
+                        20%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-20"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="text2 blue">
+                    Design and Development Skills
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        HTML
+                    </div>
+                    <div class="percentage">
+                        100%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-100"></div>
+                    </div>
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        CSS
+                    </div>
+                    <div class="percentage">
+                        85%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-85"></div>
+                    </div>
+
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        Bootstrap
+                    </div>
+                    <div class="percentage">
+                        70%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-70"></div>
+                    </div>
+
+                </div>
+
+                <div class="text3">
+                    <div class="skill">
+                        Figma
+                    </div>
+                    <div class="percentage">
+                        20%
+                    </div>
+                    <div class="progress">
+                        <div class="progress-value-20"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Education-->
+    <div class="pages" id="i4">
+        <div class="text1 bold blue">
+            Education
+        </div>
+
+        <div class="card">
+            <div class="head card1">
+                <div class="text2 roboto blue bold">IIT Roorkee</div>
+                <div class="year text3 roboto gray bold">2022-Ongoing</div>
+            </div>
+            <div class="card2">
+                <div class="text3 roboto gray">
+                    Grade: 9.51<br />
+                    Experience: Student Volunteer in NSS<br/>
+                    B-Tech, Computer Science and Engineering
+                </div>
+                <div class="text3 roboto gray">
+                    Courses:<br />
+                    CSN291 - Object Oriented Analysis and Design - 10/10<br />
+                    CSN221 - Computer Architecture and Microprocessors - 10/10<br />
+                    CSN106 - Discrete Structures - 10/10<br />
+                    CSN102 - Data Structures - 9/10<br />
+                    CSN103 - Object Oriented Programming in Java - 10/10<br />
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="head card1">
+                <div class="text2 roboto blue bold">FIITJEE, Hyderabad</div>
+                <div class="year text3 roboto gray bold">2020-2022</div>
+            </div>
+            <div class="card2">
+                <div class="text3 roboto gray">
+                    Percentage: 98.4%<br />
+                    Mathematics, Physics, Chemistry Stream, TSBIE
+                </div>
+                <div class="text3 roboto gray">
+                    Achievements:<br/>
+                    JEE Advanced 2022 - AIR-309<br/>
+                    JEE Mains 2022 - AIR-328<br/>
+                    KVPY SX 2021 - AIR-993<br/>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="head card1">
+                <div class="text2 roboto blue bold">Gitanjali Devshala</div>
+                <div class="year text3 roboto gray bold">2016-2020</div>
+            </div>
+            <div class="card2">
+                <div class="text3 roboto gray">
+                    Percentage: 97.6%<br />
+                    Achievements: School Topper for the year 2019-2020<br/>
+                    ICSE Board
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Contact-->
+    <div class="pages" id="i5">
+        <div class="top blue text1 bold">
+            Contact Me
+        </div>
+        <div class="bottom">
+            <div class="leftc">
+                <div class="contact-image">
+                    <img src="./assets/images/contact.png" alt="contact">
+                </div>
+
+                <div class="contacttext">
+                    <div class="text2 white roboto bold">Sarvasva Gupta</div>
+                    <div class="text3 gray roboto">Sophomore at IIT Roorkee.</div><br />
+                    <div class="text3 gray roboto">Feel free to get in touch with me via call or e-mail.</div>
+                </div>
+
+                <div class="socialmedialinks">
+                    <div class="fb"><img src="./assets/images/2959749_facebook_icon.svg" alt="facebook icon"></div>
+                    <div class="whatsapp"><img src="./assets/images/843786_whatsapp_icon.svg" alt="whatsapp icon"></div>
+                    <div class="linkedin"><img src="./assets/images/1820468_brand_linkedin_logo_network_social_icon.svg"
+                            alt="linkedin icon"></div>
+                </div>
+            </div>
+
+            <div class="rightc roboto gray">
+
+                <div class="input">
+                    YOUR NAME<br />
+                    <input class="roboto gray text3" type="email" />
+                </div>
+                <div class="input">
+                    EMAIL<br />
+                    <input class="roboto gray text3" type="email" />
+                </div>
+                <div class="input">
+                    PHONE NUMBER<br />
+                    <input class="roboto gray text3" type="email" />
+                </div>
+                <div class="input" id="message">
+                    MESSAGE<br />
+                    <textarea class="roboto gray text3"></textarea>
+                </div>
+
+                <button class="btn gray roboto bold text3">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bold gray text3 roboto">
+        Copyright (c) 2022-2023, Sarvasva Gupta
+    </div>
+</body>
+
+</html>
